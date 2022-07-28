@@ -1,0 +1,41 @@
+/* Наші переваги */
+.section-benefits {
+    &__list {
+        justify-content: space-between;
+    }
+    &__item {
+        width: 16.875rem;
+    }
+    
+    /* Наші переваги icon */
+    &__thumb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 7.5rem;
+        background-color: var(--color-background-third);
+        margin-bottom: 1.875rem;
+    }
+    &__icon {
+        width: 4.375rem;
+        height: 4.375rem;
+    }
+    
+    /* Наші переваги текст */
+    &__title {
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 0.625rem;
+    }
+    &__text {
+        color: var(--color-secondary);
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+}

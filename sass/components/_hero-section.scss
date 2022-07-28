@@ -1,0 +1,56 @@
+$hero-image-gradient:linear-gradient(#2f303a66, #2f303a66);
+$shadow:0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+/* Герой */
+.hero-section {
+    background-image: $hero-image-gradient, url('../images/photo-main/section-hero/hero-bg.jpg');
+    background-color: var(--color-background-secondary);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 30rem;
+    margin: 0 auto;
+    box-shadow: $shadow;
+
+    @include for-pixel-ratio-2 {
+        background-image: $hero-image-gradient, url('../images/photo-main/section-hero/hero-bg@2x.jpg');
+    }
+    
+    @media screen and (min-width:1200px) {
+        background-image: $hero-image-gradient, url('../images/photo-main/section-hero/hero-bg-desktop.jpg');
+        max-width: 100rem;
+    }
+    &__container {
+        padding: 12.5rem 0;
+    }
+    &__title {
+        color: var(--color-other);
+        font-weight: 900;
+        font-size: 2.75rem;
+        line-height: 1.36;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        width: 43.5rem;
+        margin: 0 auto;
+        margin-bottom: 1.875rem;
+    }
+    &__button {
+        color: var(--color-other);
+        background-color: var(--color-background-accent);
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        margin: 0 auto;
+        padding: 0.625rem 2rem;
+        border-radius: 0.25rem;
+        border: var(--color-accent);
+        transition: background-color var(--default-transition);
+        /* Герой ховер, фокус */
+        &:hover,
+        &:focus {
+            background-color: #2196f399 ; 
+        }
+    }
+}

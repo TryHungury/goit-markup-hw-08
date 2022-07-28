@@ -1,0 +1,71 @@
+/* Головна форма */
+.form-field {
+    &__thumb {
+        display: block;
+        width: 28rem;
+        height: 21.375rem;
+        margin: 0.75rem 2.5rem 1.25rem;
+    }
+    &__name,
+    &__tel,
+    &__email {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 58px;
+        justify-content: space-between;
+        margin-bottom: 0.625rem;
+    }
+    &__label {
+        color: var(--color-secondary);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+    }
+    &__thumb-input {
+        position: relative;
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        height: 2.5rem;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 0.25rem;
+        padding-left: 2.625rem;
+        transition: border var(--default-transition);
+        &:focus {
+            border: 1px solid var(--color-accent);
+            outline: none;
+        }
+    }
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.125rem;
+        height: 1.125rem;
+        margin: 0.687rem;
+        transition: fill var(--default-transition);
+        .form-field__input:focus + & {
+            fill: var(--color-accent);
+        }
+    }
+    /* Поле для коментаря */
+    &__text-area {
+        width: 100%;
+        resize: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 0.25rem;
+        padding: 0.75rem 1rem;
+        transition: border var(--default-transition);
+        &::placeholder {
+            color: #75757580;
+        }
+        &:focus {
+            border: 1px solid var(--color-accent);
+            outline: none;
+        }
+    }
+}

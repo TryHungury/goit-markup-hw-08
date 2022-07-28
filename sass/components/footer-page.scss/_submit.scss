@@ -1,0 +1,17 @@
+/* Сабміт */
+.submit {
+    display: block;
+    width: 35.625rem;
+    height: 5.375rem;
+    margin-left: 5.812rem;
+    margin-top: 0.625rem;
+    &__title {
+        color: var(--color-other);
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 1.25rem;
+    }
+}

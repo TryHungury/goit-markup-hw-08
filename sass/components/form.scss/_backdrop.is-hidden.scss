@@ -1,0 +1,7 @@
+/* backdrop */
+.backdrop.is-hidden {
+    transform: scale(1.2);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}

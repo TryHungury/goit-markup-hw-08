@@ -1,0 +1,26 @@
+/* Адрес футер */
+.address {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    letter-spacing: 0.03em; 
+    &__text {
+        color: var(--color-other);
+        font-style: normal;
+    }
+    &__link {
+        color: var(--color-alfa);
+        font-style: normal;
+        transition: color var(--default-transition);
+        /* Адресс ховер, фокус */
+        &:hover,
+        &:focus {
+            color: var(--color-accent);
+        }
+    }
+    &__outer-margin:not(:last-child){
+        margin-bottom: 0.562rem;
+    }
+}

@@ -1,0 +1,90 @@
+/* Поле дозволу */
+.allow-group {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 1.875rem;
+    &__input {
+        appearance: none;
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content:'';
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            border: 2px solid var(--color-primary);
+            border-radius: 2px;
+            opacity: 1;
+            transition: opacity var(--default-transition);
+            z-index: 1;
+        }
+        &:checked.allow-group::before {
+            opacity: 0;
+        }
+    }
+    &__thumb {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1rem;
+        height: 1rem;
+    }
+    &__icon {
+        display: block;
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        top: 0;
+        left: 0;
+        fill: var(--color-background-other);
+        transition: fill var(--default-transition);
+        .allow-group__input:checked + & {
+            fill: var(--color-accent);
+        }
+    }
+    &__label {
+        justify-content: space-between;
+        color: var(--color-secondary);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        width: 82%;
+    }
+    &__link {
+        color: var(--color-accent);
+        text-decoration-line: underline;
+    }
+    /* Кнопка форми */
+    &__thumb-button {
+        width: 12.5rem;
+        height: 3.125rem;
+        margin: 0 auto;
+    }
+    &__button-submit {
+        width: 100%;
+        height: 100%;
+        font-style: normal;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        color: var(--color-background-other);
+        background-color: var(--color-background-accent);
+        box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+        border-radius: 0.25rem; 
+        border: 1px solid var(--color-accent);
+        cursor: pointer;
+        transition: background-color var(--default-transition);
+        &:focus ,
+        &:hover {
+            background: #188CE8;
+        }
+    }
+}

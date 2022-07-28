@@ -1,0 +1,34 @@
+.messenger-icon {
+    display: flex;
+    justify-content: center;
+    &__item {
+        margin: 0 0.312rem;
+    }
+    &__link {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0.75rem;
+        border-radius: 100%;
+        background-color: var(--color-background-other);
+        transition: background-color var(--default-transition),
+        fill var(--default-transition);
+        &:hover,
+        &:focus {
+            fill: var(--color-background-other);
+            background-color: var(--color-background-accent);
+        }
+    }
+    &__icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        fill: var(--color-always-clients);
+        transition: fill var(--default-transition),
+        background-color var(--default-transition);
+        .messenger-icon__link:hover &,
+        .messenger-icon__link:focus & {
+            fill: var(--color-background-other);
+            background-color: var(--color-background-accent);
+        }
+    }
+}

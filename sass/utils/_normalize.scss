@@ -1,0 +1,23 @@
+/* Normalize */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Загальне забирання марджинів */
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Відключення стилю лішок */
+li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

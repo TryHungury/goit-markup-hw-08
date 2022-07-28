@@ -1,0 +1,48 @@
+/* Контейнер */
+.container {
+    width: 75rem;
+    margin: 0 auto;
+    padding: 0 0.937rem;
+}  
+.section {
+    padding: 5.875rem 0;
+}
+.flex-box {
+    display: flex;
+}
+
+/* Властивості на все тіло */
+body {
+    color: var(--color-primary);
+    font-family: var(--font-family-primary);
+    font-size: 1rem;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+/* Стилі заголовки */
+.title {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em; 
+    color: var(--color-primary);
+    margin-bottom: 3.125rem ;
+}
+
+/* Стиль посилань */
+.link {
+    color: var(--color-secondary);
+    fill: var(--color-secondary);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+    text-decoration: none;
+}
+
+/* Мейн */
+main {
+    background-color: var(--color-background-other);
+}

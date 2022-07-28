@@ -1,0 +1,34 @@
+/* Чим ми займаємось */
+.section-what-we-do {
+    &__outer-margin {
+        padding-bottom: 5.875rem;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        height: 18.375rem;
+    }
+    &__item {
+        position: relative;
+    }
+    &__overlay {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 4.375rem;
+        bottom: 0;
+        left: 0;
+        background-color: var(--color-background-fon-opacity);
+    }
+    &__text {
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--color-other);
+    }
+}

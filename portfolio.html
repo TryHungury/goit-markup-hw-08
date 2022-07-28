@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Шапка -->
+    <header class="header-page">
+      <div class="container header-page__flex">
+        <div class="header-page__nav header-page__outer-margin">
+          <!-- Логотип -->
+          <a class="logo logo__header-page link" href="./index.html">
+            <span class="logo__first-half-header">Web</span><span class="logo__secondary-half-header">Studi</span>
+          </a>
+          <!-- Навігація -->
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="link navigation__link" href="./index.html">Студия</a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="./portfolio.html"><span class="current">Портфолио</span></a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Особисті дані -->
+        <div class="header-page__contact contact header-page__outer-margin">
+          <ul class="contact__list">
+            <li class="contact__item">
+              <a class="link contact__link" href="mailto:info@devstudio.com">
+                <svg class="contact__icon">
+                  <use href="./images/icons/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="link contact__link" href="tel:+380961111111">
+                <svg class="contact__icon">
+                  <use href="./images/icons/sprite.svg#icon-tel"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Унікальний контент -->
+    <main>
+      <!-- Секція наші пропозиції -->
+      <section class="section-orders section">
+          <div class="container">
+          <h1 class="visually-hidden">Нашы предложения</h1>
+          <ul class="radio-button">
+            <li class="radio-button__item radio-button__outer-margin">
+              <button class="radio-button__button" type="button">Все</button>
+            </li>
+            <li class="radio-button__item radio-button__outer-margin">
+              <button class="radio-button__button" type="button">Веб-сайты</button>
+            </li>
+            <li class="radio-button__item radio-button__outer-margin">
+              <button class="radio-button__button" type="button">Приложения</button>
+            </li>
+            <li class="radio-button__item radio-button__outer-margin">
+              <button class="radio-button__button" type="button">Дизайн</button>
+            </li>
+            <li class="radio-button__item radio-button__outer-margin">
+              <button class="radio-button__button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- Фото наших пропозицій -->
+          <ul class="our-offers flex-box">
+            <li class="our-offers__item our-offers__outer-margin flex-box">
+              <a class="our-offers__link link flex-box" href="#">
+                <div class="our-offers__box-shadow flex-box">
+                 <div class="our-offers__box flex-box">
+                  <img
+                  src="./images/photo-portfolio/photo-technocrack.jpg"
+                  alt="фото ноутбука из изображением сайта"
+                />
+                <div class="our-offers__overlay">
+                  <p class="our-offers__text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                 </div>
+                  <div class="our-offers__thumb">
+                    <h2 class="our-offers__title-name">Технокряк</h2>
+                    <p class="our-offers__paragraph">Веб-сайт</p>
+                  </div>
+                </div>
+                </a>
+              </li>
+            <li class="our-offers__item our-offers__outer-margin flex-box">
+              <a class="our-offers__link link flex-box" href="#">
+                <div class="our-offers__box-shadow flex-box">
+                  <div class="our-offers__box flex-box">
+                  <img
+                    src="./images/photo-portfolio/photo-poster.jpg"
+                    alt="постер матча баскетбола"
+                  />
+                  <div class="our-offers__overlay">
+                    <p class="our-offers__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                    </p>
+                  </div>
+                   </div>
+                  <div class="our-offers__thumb">
+                    <h2 class="our-offers__title-name">Постер New Orlean vs Golden Star</h2>
+                    <p class="our-offers__paragraph">Дизайн</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="our-offers__item our-offers__outer-margin flex-box">
+              <a class="our-offers__link link flex-box" href="#">
+                <div class="our-offers__box-shadow flex-box">
+                  <div class="our-offers__box flex-box">
+                  <img
+                    src="./images/photo-portfolio/photo-restaurant-seafood.jpg"
+                    alt="лого ресторана"
+                  />
+                  <div class="our-offers__overlay">
+                    <p class="our-offers__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                    </p>
+                  </div>
+                   </div>
+                  <div class="our-offers__thumb">
+                    <h2 class="our-offers__title-name">Ресторан Seafood</h2>
+                    <p class="our-offers__paragraph">Приложение</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="our-offers__item our-offers__outer-margin flex-box">
+              <a class="our-offers__link link flex-box" href="#">
+                <div class="our-offers__box-shadow flex-box">
+                  <div class="our-offers__box flex-box">
+                  <img
+                    src="./images/photo-portfolio/photo-project-prime.jpg"
+                    alt="фото чёрные беспроводные наушники"
+                  />
+                  <div class="our-offers__overlay">
+                    <p class="our-offers__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                    </p>
+                  </div>
+                   </div>
+                  <div class="our-offers__thumb">
+                    <h2 class="our-offers__title-name">Проект Prime</h2>
+                    <p class="our-offers__paragraph">Маркетинг</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="our-offers__item our-offers__outer-margin flex-box">
+              <a class="our-offers__link link flex-box" href="#">
+                <div class="our-offers__box-shadow flex-box">
+                  <div class="our-offers__box flex-box">
+                  <img
+                    src="./images/photo-portfolio/photo-project-boxes.jpg"
+                    alt="фото две коробки"
+                  />
+                  <div class="our-offers__overlay">
+                    <p class="our-offers__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                    </p>
+                  </div>
+                   </div>
+                  <div class="our-offers__thumb">
+                    <h2 class="our-offers__title-name">Проект Boxes</h2>
+                    <p class="our-offers__paragraph">Приложение</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="our-offers__item our-offers__outer-margin flex-box">
+              <a class="our-offers__link link flex-box" href="#">
+                <div class="our-offers__box-shadow flex-box">
+                  <div class="our-offers__box flex-box">
+                  <img
+                    src="./images/photo-portfolio/photo-inspiration-borders.jpg"
+                    alt="фото монитора ком'ютера с изображением сайта"
+                  />
+                  <div class="our-offers__overlay">
+                    <p class="our-offers__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                    </p>
+                  </div>
+                   </div>
+                  <div class="our-offers__thumb">
+                    <h2 class="our-offers__title-name">Inspiration has no Borders</h2>
+                    <p class="our-offers__paragraph">Веб-сайт</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="our-offers__item flex-box our-offers__outer-margin">
+             <a class="our-offers__link link flex-box" href="#">
+                <div class="our-offers__box-shadow flex-box">
+                  <div class="our-offers__box flex-box">
+                  <img
+                    src="./images/photo-portfolio/photo-limeted-edition.jpg"
+                    alt="фото книги"
+                  />
+                  <div class="our-offers__overlay">
+                    <p class="our-offers__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                    </p>
+                  </div>
+                   </div>
+                  <div class="our-offers__thumb">
+                    <h2 class="our-offers__title-name">Издание Limited Edition</h2>
+                    <p class="our-offers__paragraph">Дизайн</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="our-offers__item flex-box our-offers__outer-margin">
+              <a class="our-offers__link link flex-box" href="#">
+                <div class="our-offers__box-shadow flex-box">
+                  <div class="our-offers__box flex-box">
+                  <img
+                    src="./images/photo-portfolio/photo-project-lab.jpg"
+                    alt="фото бирки"
+                  />
+                  <div class="our-offers__overlay">
+                    <p class="our-offers__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                    </p>
+                  </div>
+                   </div>
+                  <div class="our-offers__thumb">
+                    <h2 class="our-offers__title-name">Проект LAB</h2>
+                    <p class="our-offers__paragraph">Маркетинг</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="our-offers__item flex-box our-offers__outer-margin">
+              <a class="our-offers__link link flex-box" href="#">
+                <div class="our-offers__box-shadow flex-box">
+                  <div class="our-offers__box flex-box">
+                  <img
+                    src="./images/photo-portfolio/photo-growing-business.jpg"
+                    alt="фото ноутбука с изображением сайта"
+                  />
+                  <div class="our-offers__overlay">
+                    <p class="our-offers__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                    </p>
+                  </div>
+                   </div>
+                  <div class="our-offers__thumb">
+                    <h2 class="our-offers__title-name">Growing Business</h2>
+                    <p class="our-offers__paragraph">Приложение</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <!-- Футер -->
+    <footer class="footer-page flex-box">
+      <div class="container flex-box">
+        <div>
+          <!-- Логотип -->
+          <a class="logo link logo__footer-page" href="./index.html"
+            ><span class="logo__first-half-footer">Web</span
+            ><span class="logo__secondary-half-footer">Studi</span></a
+          >
+          <!-- Адрес -->
+          <address class="address">
+            <ul class="address-list">
+              <li class="address__item address__outer-margin">
+                <p class="address__text">
+                  г. Киев, пр-т Леси Украинки, 26
+                </p>
+              </li>
+              <li class="address__item address__outer-margin">
+                <a
+                class="address__link link"
+                href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="address__item address__outer-margin">
+                <a class="address__link link" href="tel:+380961111111"
+                >+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Приэднатися футер -->
+        <section class="join-in">
+          <h2 class="join-in__title">присоединяйтесь</h2>
+          <ul class="join-in__list">
+            <li>
+              <a class="join-in__link" href="#">
+                <svg class="join-in__icon">
+                  <use href="images/icons/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="join-in__link" href="#">
+                <svg class="join-in__icon">
+                  <use href="images/icons/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="join-in__link" href="#">
+                <svg class="join-in__icon">
+                  <use href="images/icons/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="join-in__link" href="#">
+                <svg class="join-in__icon">
+                  <use href="images/icons/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- Submit -->
+        <div class="submit">
+          <h2 class="submit__title">Подпишитесь на рассылку</h2>
+          <form class="form-submit">
+            <div class="form-submit__thumb">
+              <input 
+              class="form-submit__email" 
+              type="text" 
+              name="input-email"
+              placeholder="E-mail"
+              >
+              <div class="form-submit__box">
+                <button class="form-submit__button" type="button">
+                  Подписаться
+                  <svg class="form-submit__icon">
+                    <use href="images/icons/sprite.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      </footer>
+  </body>
+</html>
