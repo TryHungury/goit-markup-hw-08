@@ -1,11 +1,23 @@
 /* Наші переваги */
 .section-benefits {
     &__list {
-        justify-content: space-between;
+        @include media-min (1200px) {
+            justify-content: space-between;
+        }
     }
     &__item {
-        width: 16.875rem;
+        width: 100%;
+        @include media-max (1200px) {
+            padding: 0.937rem 0;
+        }
+        @include media-min (768px) {
+            // max-width: calc(50vw-15px);
+        }
+        @include media-min (1200px) {
+            max-width: 16.875rem;
+        }
     }
+
     
     /* Наші переваги icon */
     &__thumb {

@@ -1,34 +1,56 @@
 /* Контейнер */
 .container {
-    width: 75rem;
+    max-width: 30rem;
+    width: 100%;
     margin: 0 auto;
     padding: 0 0.937rem;
+    
+    @include media-min (1200px) {
+        max-width: 75rem;
+    }
 }  
 .section {
-    padding: 5.875rem 0;
+    padding: 3.75rem 0;
+    @include media-min (1200px) {
+        padding: 5.875rem 0;
+    }
 }
 .flex-box {
-    display: flex;
+    @include media-min (1200px) { 
+        display: flex;
+        // flex-wrap: wrap;
+    }
 }
 
 /* Властивості на все тіло */
 body {
+    
     color: var(--color-primary);
     font-family: var(--font-family-primary);
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    
+    @include media-min (1200px) { 
+        font-size: 1rem;
+    }
 }
 
 /* Стилі заголовки */
 .title {
     font-weight: 700;
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em; 
+    margin-bottom: 1.875rem;
     color: var(--color-primary);
-    margin-bottom: 3.125rem ;
+
+    @include media-min (1200px) { 
+        font-size: 2.25rem;
+        margin-bottom: 3.125rem ;
+    }
+    
 }
 
 /* Стиль посилань */

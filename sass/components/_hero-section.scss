@@ -7,45 +7,69 @@ $shadow:0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 30rem;
+    max-width: 48rem;
+    width: 100%;
     margin: 0 auto;
     box-shadow: $shadow;
 
     @include for-pixel-ratio-2 {
         background-image: $hero-image-gradient, url('../images/photo-main/section-hero/hero-bg@2x.jpg');
     }
-    
-    @media screen and (min-width:1200px) {
+    @include media-min (768px) { 
+        background-image: $hero-image-gradient, url('../images/photo-main/section-hero/hero-bg-tablet.jpg');
+        max-width: 60rem;
+       
+        @include for-pixel-ratio-2 {
+            background-image: $hero-image-gradient, url('../images/photo-main/section-hero/hero-bg-tablet@x2.jpg');
+        }
+    }
+
+    @include media-min (1200px) {
         background-image: $hero-image-gradient, url('../images/photo-main/section-hero/hero-bg-desktop.jpg');
         max-width: 100rem;
+
+        @include for-pixel-ratio-2 {
+            background-image: $hero-image-gradient, url('../images/photo-main/section-hero/hero-bg-desktop@x2.jpg');
+        }
     }
     &__container {
+        padding: 7.375rem 0;
+
+        @include media-min (1200px) {
         padding: 12.5rem 0;
+        }
     }
     &__title {
         color: var(--color-other);
         font-weight: 900;
-        font-size: 2.75rem;
-        line-height: 1.36;
+        font-size: 1.625rem;
+        line-height: 1.62;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 0.06em;
-        width: 43.5rem;
+        max-width: 22.5rem;
+        width: 100%;
         margin: 0 auto;
         margin-bottom: 1.875rem;
+        @include media-min (1200px) {
+            font-size: 2.75rem;
+            line-height: 1.36;
+            max-width: 43.5rem;
+        }
     }
     &__button {
+        display: block;
         color: var(--color-other);
         background-color: var(--color-background-accent);
         font-weight: 700;
         font-size: 1rem;
         line-height: 1.88;
         letter-spacing: 0.06em;
-        cursor: pointer;
         margin: 0 auto;
         padding: 0.625rem 2rem;
         border-radius: 0.25rem;
         border: var(--color-accent);
+        cursor: pointer;
         transition: background-color var(--default-transition);
         /* Герой ховер, фокус */
         &:hover,

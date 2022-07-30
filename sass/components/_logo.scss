@@ -2,7 +2,15 @@
 .logo {
     display: block;
     font-family: var(--font-family-secondary);
-    font-size: 1.625rem;
-    line-height: 1.19;
+    font-size: 1.5rem;
+    line-height: 1.16;
     letter-spacing: 0.03em;
+    max-width: 8.375rem;
+    width: 100%;
+
+    @include media-min (1200px) {
+        font-size: 1.625rem;
+        line-height: 1.19;
+    }
+
 }

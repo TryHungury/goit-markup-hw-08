@@ -1,32 +1,38 @@
 /* Навігація */
 .navigation {
-    &__list {
-        display: flex;
-        align-items: center;
-    } 
-    &__item:not(:last-child) {
-        margin-right: 3.125rem;
-    }
-    &__link {  
-        position: relative;
-        padding: 0.5rem 0; 
-        color: var(--color-primary);
-        transition: color var(--default-transition);
-            & .current::after {
-                content: "";
-                position: absolute;
-                display: block;
-                width: 100%;
-                height: 0.25rem;
-                bottom: -1.562rem;
-                left: 0rem;
-                border-radius: 0.125rem;
-                background-color: var(--color-background-accent);
-            }
-        /* Навігація ховер, фокус */
-            &:hover,
-            &:focus {
-                color: var(--color-accent);
-            }
+    display: none;
+
+    @include media-min (1200px) {
+        display: block;
+        
+        &__list {
+            display: flex;
+            align-items: center;
+        } 
+        &__item:not(:last-child) {
+            margin-right: 3.125rem;
+        }
+        &__link {  
+            position: relative;
+            padding: 0.5rem 0; 
+            color: var(--color-primary);
+            transition: color var(--default-transition);
+                & .current::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 0.25rem;
+                    bottom: -1.562rem;
+                    left: 0rem;
+                    border-radius: 0.125rem;
+                    background-color: var(--color-background-accent);
+                }
+            /* Навігація ховер, фокус */
+                &:hover,
+                &:focus {
+                    color: var(--color-accent);
+                }
+        }
     }
 }

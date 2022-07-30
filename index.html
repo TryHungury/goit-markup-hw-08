@@ -137,12 +137,12 @@
       <!-- Чим ми займаємось -->
       <section class="section-what-we-do section-what-we-do__outer-margin">
         <div class="container">
-          <h2 class="title">Чем мы занимаемся</h2>
+          <h2 class="title section-what-we-do__title">Чем мы занимаемся</h2>
           <ul class="section-what-we-do__list">
             <li class="section-what-we-do__item">
               <img
                 src="./images/photo-main/what-we-doing/coding.jpg"
-                width="370"
+                
                 alt="Писание кода руками на клавиатуре"
               />
               <div class="section-what-we-do__overlay">
@@ -152,7 +152,7 @@
             <li class="section-what-we-do__item">
               <img
                 src="./images/photo-main/what-we-doing/format-selection.jpg"
-                width="370"
+                
                 alt="Сравнений формы гаджета с формами моделей на ноутбуке"
               />
               <div class="section-what-we-do__overlay">
@@ -162,7 +162,7 @@
             <li class="section-what-we-do__item">
               <img
                 src="./images/photo-main/what-we-doing/color-selection.jpg"
-                width="370"
+                
                 alt="Выбор гамы цветов"
               />
               <div class="section-what-we-do__overlay">
@@ -178,11 +178,16 @@
           <h2 class="title">Наша команда</h2>
           <ul class="box-employment flex-box">
             <li class="box-employment-item">
-              <img
+              <!-- <picture>
+                <source media="(max-width:480px)" srcset="./images/photo-main/ours-team/photo-igor-450.jpg 450w">
+                <source media="(min-width:768px)" srcset="./images/photo-main/ours-team/photo-igor-354.jpg 354w">
+                <source media="(min-width:1200px)" srcset="./images/photo-main/ours-team/photo-igor.jpg 270w">
+               sizes="(min-width:1200px) 25vw,(min-width:768px) 50vw, 100vw," -->
+                <img
                 src="./images/photo-main/ours-team/photo-igor.jpg"
-                width="270"
-                alt="Фото Игоря"
-              />
+                  alt="Фото Игоря"
+                />
+              <!-- </picture> -->
               <div class="box-employment__wrap">
                 <h3 class="box-employment__name">Игорь Демьяненко</h3>
                 <p class="box-employment__text">Product Designer</p>
@@ -231,7 +236,7 @@
             <li class="box-employment-item">
               <img
                 src="./images/photo-main/ours-team/photo-olga.jpg"
-                width="270"
+                
                 alt="Фото Ольги"
               />
               <div class="box-employment__wrap">
@@ -282,7 +287,7 @@
             <li class="box-employment-item">
               <img
                 src="./images/photo-main/ours-team/photo-nikolay.jpg"
-                width="270"
+                
                 alt="Фото Николая"
               />
               <div class="box-employment__wrap">
@@ -333,7 +338,7 @@
             <li class="box-employment-item">
               <img
                 src="./images/photo-main/ours-team/photo-mihail.jpg"
-                width="270"
+                
                 alt="Фото Михаила"
               />
               <div class="box-employment__wrap">
@@ -388,7 +393,7 @@
       <section class="section-regular-customers section">
         <div class="container">
           <h2 class="title section-regular-customers__title">Постоянные клиенты</h2>
-          <ul class="flex-box section-regular-customers__list">
+          <ul class=" section-regular-customers__list">
             <li class="section-regular-customers__item">
               <a class="section-regular-customers__link" href="#">
                 <svg class="section-regular-customers__icon">
@@ -444,7 +449,7 @@
     <!-- Футер -->
     <footer class="footer-page flex-box">
       <div class="container flex-box">
-        <div>
+        <div class="footer-page__contact">
           <!-- Логотип -->
           <a class="logo link logo__footer-page" href="./index.html"
             ><span class="logo__first-half-footer">Web</span

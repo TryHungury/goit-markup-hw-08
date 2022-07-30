@@ -1,8 +1,11 @@
 /* Радіо кнопки */
 .radio-button { 
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 3.125rem;
+    @include media-min (1200px){
+        justify-content: center;
+    }
     &__outer-margin:not(:last-child) {
         margin-right: 0.5rem;
     }
@@ -23,6 +26,11 @@
         border var(--default-transition),
         box-shadow var(--default-transition),
         background-color var(--default-transition);
+        &:nth-child(-n + 3) {
+            @include media-max (768px) {
+                margin-bottom: 0.975rem;   
+            }
+        }
         /* Радіо кнопки ховер, фокус */
         &:hover,
         &:focus {

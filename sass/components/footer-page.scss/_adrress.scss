@@ -5,7 +5,11 @@
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 1.71;
-    letter-spacing: 0.03em; 
+    letter-spacing: 0.03em;
+    @include media-max(768px){
+        align-items: center;
+        margin-bottom: 3.75rem;
+    } 
     &__text {
         color: var(--color-other);
         font-style: normal;
@@ -14,6 +18,11 @@
         color: var(--color-alfa);
         font-style: normal;
         transition: color var(--default-transition);
+        @include media-max (768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         /* Адресс ховер, фокус */
         &:hover,
         &:focus {

@@ -4,7 +4,10 @@
     flex-direction: column;
     width: 12.875rem;  
     margin-top: 0.75rem;
-    margin-left: 4.375rem; 
+    margin: 0 auto 3.75rem auto;
+    @include media-min(1200px) {
+        margin: 0 0 0 4.375rem; 
+    }
     &__title {
         color: var(--color-other);
         font-weight: 700;
@@ -13,6 +16,10 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 1.25rem;
+        @include media-max(768px) {
+            text-align: center;
+        }
+
     }
     &__list {
         display: flex;
