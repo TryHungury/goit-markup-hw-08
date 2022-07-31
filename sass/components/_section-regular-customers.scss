@@ -14,7 +14,7 @@
         width: 100%;
 
         &:not(:last-child) {
-            @include media-max (449px){
+            @include media-max (450px){
                 margin: 0 0 1.875rem 0;
             }
         }
