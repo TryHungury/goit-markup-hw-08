@@ -27,21 +27,25 @@
         max-width: 23.125rem;
     }
     }
-    @include media-min (1200px) {
-        &__outer-margin:nth-child(-n + 6) {
+
+    @include media-max (768px) {
+        &__outer-margin:nth-child(-n + 8) {
             margin-bottom: 1.875rem;
         }
     }
+    
     @include media-min (768px) {
         &__outer-margin:not(:last-child) {
             margin-bottom: 1.875rem;
         }
     }
-    @include media-max (768px) {
+
+    @include media-min (1200px) {
         &__outer-margin:nth-child(-n + 6) {
             margin-bottom: 1.875rem;
         }
     }
+
     &__box-shadow {
         display: flex;
         flex-direction: column;
