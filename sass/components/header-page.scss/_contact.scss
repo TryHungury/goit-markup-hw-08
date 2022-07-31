@@ -5,9 +5,15 @@
     &__list {    
         display: flex;
         align-items: center;
+        @include media-max(1200px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__item:not(:last-child) {
-        margin-right: 1.875rem;
+        @include media-min (1200px){
+            margin-right: 1.875rem;
+        }
     }
     &__link{
         display: flex;
@@ -30,7 +36,7 @@
             fill: var(--color-accent);
         }
     } 
-    @include media-min (1200px) {
+    @include media-min (768px) {
         display: block;
     }
 }

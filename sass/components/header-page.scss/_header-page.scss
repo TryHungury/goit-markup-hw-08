@@ -6,16 +6,24 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include media-min-max (768px, 1200px) {
+            justify-content: space-around;
+            flex-grow: 1;
+        }
     }
+    &__outer-margin {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        @include media-min (768px) {
+            margin-top: 1.562rem;
+            margin-bottom: 1.562rem;
+        }
+    }   
     
-    @include media-min (1200px) {
+    @include media-min (768px) {
         &__flex {
             display: flex;
             justify-content: space-between;
         }
-        &__outer-margin {
-            margin-top: 1.562rem;
-            margin-bottom: 1.562rem;
-        }   
     }
 }
