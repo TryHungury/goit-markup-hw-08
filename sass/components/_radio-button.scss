@@ -3,11 +3,22 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 3.125rem;
-    @include media-min (1200px){
+    @include media-min (768px){
         justify-content: center;
     }
     &__outer-margin:not(:last-child) {
         margin-right: 0.5rem;
+
+        &:not(:last-child) {
+            @include media-max (276px) {
+                margin-bottom: 0.975rem;
+            }
+        }
+        &:nth-child(-n + 3) {
+            @include media-max (768px) {
+                margin-bottom: 0.975rem;   
+            }
+        }
     }
     &__button {
         background-color: var(--color-background-third);
@@ -26,11 +37,6 @@
         border var(--default-transition),
         box-shadow var(--default-transition),
         background-color var(--default-transition);
-        &:nth-child(-n + 3) {
-            @include media-max (768px) {
-                margin-bottom: 0.975rem;   
-            }
-        }
         /* Радіо кнопки ховер, фокус */
         &:hover,
         &:focus {

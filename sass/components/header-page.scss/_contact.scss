@@ -2,35 +2,35 @@
 .contact {
     display: none;
 
+    &__list {    
+        display: flex;
+        align-items: center;
+    }
+    &__item:not(:last-child) {
+        margin-right: 1.875rem;
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0;
+        transition: color var(--default-transition);
+        /* Oсобисті дані ховер, фокус */
+        &:hover,
+        &:focus{
+            color: var(--color-accent);
+        }
+    }
+    &__icon {
+        width: 1rem;
+        height: 1rem;
+        margin: 0 0.625rem;
+        transition: fill var(--default-transition);
+        .contact__link:hover &, 
+        .contact__link:focus & {
+            fill: var(--color-accent);
+        }
+    } 
     @include media-min (1200px) {
         display: block;
-        &__list {    
-            display: flex;
-            align-items: center;
-        }
-        &__item:not(:last-child) {
-            margin-right: 1.875rem;
-        }
-        &__link{
-            display: flex;
-            align-items: center;
-            padding: 0.5rem 0;
-            transition: color var(--default-transition);
-            /* Oсобисті дані ховер, фокус */
-            &:hover,
-            &:focus{
-                color: var(--color-accent);
-            }
-        }
-        &__icon {
-            width: 1rem;
-            height: 1rem;
-            margin: 0 0.625rem;
-            transition: fill var(--default-transition);
-            .contact__link:hover &, 
-            .contact__link:focus & {
-                fill: var(--color-accent);
-            }
-        } 
     }
 }

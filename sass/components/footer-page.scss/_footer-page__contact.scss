@@ -1,8 +1,0 @@
-.footer-page__contact {
-    @include media-max (768px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}

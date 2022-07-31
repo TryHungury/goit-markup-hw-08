@@ -11,17 +11,26 @@
     }
     &__item {
         max-width: 210px;
+        width: 100%;
 
         &:not(:last-child) {
             @include media-max (374px){
                 margin: 0 0 1.875rem 0;
             }
+        }
         &:nth-child(-n + 4) {
             @include media-min-max (374px, 768px){
                 margin: 0 0 1.875rem 0;
-                max-width: 226px;
             }
         }
+        &:nth-child(-n + 3) {
+            @include media-min (768px){
+                margin: 0 0 1.875rem 0;
+            }
+        }
+        
+        @include media-min (768px) {
+            max-width: 226px;
         }
         @include media-min (1200px){
             margin: 0 0.937rem;

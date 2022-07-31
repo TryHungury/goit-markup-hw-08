@@ -1,19 +1,49 @@
 /* Секція наші пропозиції */
 .our-offers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    // @include media-min (1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    // }
+    &__link {
+        @include media-min(768px) {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+    }
     &__item {
     display: block;
-    width: 23.125rem;
-    height: 25.25rem;
+    max-width: 28.125rem;
+    width: 100%;
+    max-height: 25.25rem;
+    height: 100%;
     background-color: var(--color-background-other);
     border: 1px solid var(--color-border);
+    @include media-min (768px){
+        max-width: 22.125rem; 
     }
-    &__outer-margin:nth-child(-n + 6) {
-        margin-bottom: 1.875rem;
+    @include media-min (1200px) {
+        max-width: 23.125rem;
+    }
+    }
+    @include media-min (1200px) {
+        &__outer-margin:nth-child(-n + 6) {
+            margin-bottom: 1.875rem;
+        }
+    }
+    @include media-min (768px) {
+        &__outer-margin:not(:last-child) {
+            margin-bottom: 1.875rem;
+        }
+    }
+    @include media-max (768px) {
+        &__outer-margin:nth-child(-n + 6) {
+            margin-bottom: 1.875rem;
+        }
     }
     &__box-shadow {
+        display: flex;
         flex-direction: column;
         width: 100%;
         height: 100%;
@@ -27,8 +57,16 @@
         }
     }
     &__box {
+        max-width: 100%;
         position: relative;
         overflow: hidden;
+    }
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        @include media-min (1200px) {
+            height: 18.375rem;
+        }
     }
     &__overlay {
         position: absolute;
@@ -55,7 +93,12 @@
     }
     &__thumb {
         width: 100%;
-        padding: 1.25rem 1.5rem;
+        padding: 1.25rem 1.1rem;
+        @include media-min(768px) {
+            // display: flex;
+            // flex-direction: column;
+            flex-grow: 1;
+        }
     }
     &__title-name {
         color: var(--color-primary);

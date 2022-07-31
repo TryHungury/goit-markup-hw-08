@@ -5,6 +5,9 @@
     width: 100%;
     max-height: 9.75rem;
     height: 100%;
+    @include media-min (768px) {
+        margin: 0 auto;
+    }
     @include media-min (1200px){
         max-height: 5.375rem;
         margin: 0.625rem 0 0 5.812rem;
@@ -17,7 +20,7 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 1.25rem;
-        @include media-max (768px) {
+        @include media-max (1200px) {
             text-align: center;
         }
     }

@@ -27,8 +27,16 @@
         <div class="header-page__nav header-page__outer-margin">
           <!-- Логотип -->
           <a class="logo logo__header-page link" href="./index.html">
-            <span class="logo__first-half-header">Web</span><span class="logo__secondary-half-header">Studi</span>
+            <span class="logo__first-half-header">Web</span><span class="logo__secondary-half-header">Studio</span>
           </a>
+          <button class="button-header" type="button">
+            <a class="button-header__link link" href="#">
+              <svg class="button-header__thumb-icon">
+                <use class="button-header__icon icon__burger" href="./images/icons/sprite.svg#icon-menu_burger"></use>
+                <use class="button-header__icon icon__close-menu" href="./images/icons/sprite.svg#icon-close_menu"></use>
+              </svg>
+            </a>
+          </button>
           <!-- Навігація -->
           <nav class="navigation">
             <ul class="navigation__list">
@@ -178,16 +186,16 @@
           <h2 class="title">Наша команда</h2>
           <ul class="box-employment flex-box">
             <li class="box-employment-item">
-              <!-- <picture>
-                <source media="(max-width:480px)" srcset="./images/photo-main/ours-team/photo-igor-450.jpg 450w">
-                <source media="(min-width:768px)" srcset="./images/photo-main/ours-team/photo-igor-354.jpg 354w">
-                <source media="(min-width:1200px)" srcset="./images/photo-main/ours-team/photo-igor.jpg 270w">
-               sizes="(min-width:1200px) 25vw,(min-width:768px) 50vw, 100vw," -->
+              <picture>
+                <source media="(min-width:1200px)" srcset="./images/photo-main/ours-team/photo-igor.jpg 270w, ./images/photo-main/ours-team/photo-igor@x2.jpg 540w">
+                <source media="(min-width:768px)" srcset="./images/photo-main/ours-team/photo-igor-354.jpg 354w, ./images/photo-main/ours-team/photo-igor-354@x2.jpg 708w">
+                <source media="(min-width:300px)" srcset="./images/photo-main/ours-team/photo-igor-450.jpg 450w, ./images/photo-main/ours-team/photo-igor-450@x2.jpg 900w">
+               <!-- sizes="(min-width:1200px) 25vw,(min-width:768px) 50vw, 100vw," -->
                 <img
                 src="./images/photo-main/ours-team/photo-igor.jpg"
                   alt="Фото Игоря"
                 />
-              <!-- </picture> -->
+              </picture>
               <div class="box-employment__wrap">
                 <h3 class="box-employment__name">Игорь Демьяненко</h3>
                 <p class="box-employment__text">Product Designer</p>
@@ -234,11 +242,17 @@
               </div>
             </li>
             <li class="box-employment-item">
-              <img
-                src="./images/photo-main/ours-team/photo-olga.jpg"
-                
-                alt="Фото Ольги"
-              />
+               <picture>
+                <source media="(min-width:1200px)" srcset="./images/photo-main/ours-team/photo-olga.jpg 270w, ./images/photo-main/ours-team/photo-olga@x2.jpg 540w">
+                <source media="(min-width:768px)" srcset="./images/photo-main/ours-team/photo-olga-354.jpg 354w, ./images/photo-main/ours-team/photo-olga-354@x2.jpg 708w">
+                <source media="(max-width:768px)" srcset="./images/photo-main/ours-team/photo-olga-450.jpg 450w, ./images/photo-main/ours-team/photo-olga-450@x2.jpg 900w">
+               <!-- sizes="(min-width:1200px) 25vw,(min-width:768px) 50vw, 100vw," -->
+               <img
+                 src="./images/photo-main/ours-team/photo-olga.jpg"
+                 
+                 alt="Фото Ольги"
+               />
+              </picture>
               <div class="box-employment__wrap">
                 <h3 class="box-employment__name">Ольга Репина</h3>
                 <p class="box-employment__text">Frontend Developer</p>
@@ -285,11 +299,17 @@
               </div>
             </li>
             <li class="box-employment-item">
-              <img
-                src="./images/photo-main/ours-team/photo-nikolay.jpg"
-                
-                alt="Фото Николая"
-              />
+               <picture>
+                <source media="(min-width:1200px)" srcset="./images/photo-main/ours-team/photo-nikolay.jpg 270w, ./images/photo-main/ours-team/photo-nikolay@x2.jpg 540w">
+                <source media="(min-width:768px)" srcset="./images/photo-main/ours-team/photo-nikolay-354.jpg 354w, ./images/photo-main/ours-team/photo-nikolay-354@x2.jpg 708w">
+                <source media="(max-width:768px)" srcset="./images/photo-main/ours-team/photo-nikolay-450.jpg 450w, ./images/photo-main/ours-team/photo-nikolay-450@x2.jpg 900w">
+               <!-- sizes="(min-width:1200px) 25vw,(min-width:768px) 50vw, 100vw," -->
+               <img
+                 src="./images/photo-main/ours-team/photo-nikolay.jpg"
+                 
+                 alt="Фото Николая"
+               />
+              </picture>
               <div class="box-employment__wrap">
                 <h3 class="box-employment__name">Николай Тарасов</h3>
                 <p class="box-employment__text">Marketing</p>
@@ -336,11 +356,17 @@
               </div>
             </li>
             <li class="box-employment-item">
-              <img
-                src="./images/photo-main/ours-team/photo-mihail.jpg"
-                
-                alt="Фото Михаила"
-              />
+               <picture>
+                <source media="(min-width:1200px)" srcset="./images/photo-main/ours-team/photo-mihail.jpg 270w, ./images/photo-main/ours-team/photo-mihail@x2.jpg 540w">
+                <source media="(min-width:768px)" srcset="./images/photo-main/ours-team/photo-mihail-354.jpg 354w, ./images/photo-main/ours-team/photo-mihail-354@x2.jpg 708w">
+                <source media="(max-width:768px)" srcset="./images/photo-main/ours-team/photo-mihail-450.jpg 450w, ./images/photo-main/ours-team/photo-mihail-450@x2.jpg 900w">
+               <!-- sizes="(min-width:1200px) 25vw,(min-width:768px) 50vw, 100vw," -->
+               <img
+                 src="./images/photo-main/ours-team/photo-mihail.jpg"
+                 
+                 alt="Фото Михаила"
+               />
+              </picture>
               <div class="box-employment__wrap">
                 <h3 class="box-employment__name">Михаил Ермаков</h3>
                 <p class="box-employment__text">UI Designer</p>
@@ -449,66 +475,68 @@
     <!-- Футер -->
     <footer class="footer-page flex-box">
       <div class="container flex-box">
-        <div class="footer-page__contact">
-          <!-- Логотип -->
-          <a class="logo link logo__footer-page" href="./index.html"
-            ><span class="logo__first-half-footer">Web</span
-            ><span class="logo__secondary-half-footer">Studi</span></a
-          >
-          <!-- Адрес -->
-          <address class="address">
-            <ul class="address-list">
-              <li class="address__item address__outer-margin">
-                <p class="address__text">
-                  г. Киев, пр-т Леси Украинки, 26
-                </p>
+        <div class="footer-page__thumb">
+          <div class="footer-page__contact">
+            <!-- Логотип -->
+            <a class="logo link logo__footer-page" href="./index.html"
+              ><span class="logo__first-half-footer">Web</span
+              ><span class="logo__secondary-half-footer">Studio</span></a
+            >
+            <!-- Адрес -->
+            <address class="address">
+              <ul class="address-list">
+                <li class="address__item address__outer-margin">
+                  <p class="address__text">
+                    г. Киев, пр-т Леси Украинки, 26
+                  </p>
+                </li>
+                <li class="address__item address__outer-margin">
+                  <a
+                  class="address__link link"
+                  href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="address__item address__outer-margin">
+                  <a class="address__link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!-- Приэднатися футер -->
+          <section class="join-in">
+            <h2 class="join-in__title">присоединяйтесь</h2>
+            <ul class="join-in__list">
+              <li>
+                <a class="join-in__link" href="#">
+                  <svg class="join-in__icon">
+                    <use href="images/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item address__outer-margin">
-                <a
-                class="address__link link"
-                href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li>
+                <a class="join-in__link" href="#">
+                  <svg class="join-in__icon">
+                    <use href="images/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item address__outer-margin">
-                <a class="address__link link" href="tel:+380961111111"
-                >+38 096 111 11 11</a>
+              <li>
+                <a class="join-in__link" href="#">
+                  <svg class="join-in__icon">
+                    <use href="images/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="join-in__link" href="#">
+                  <svg class="join-in__icon">
+                    <use href="images/icons/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </section>
         </div>
-        <!-- Приэднатися футер -->
-        <section class="join-in">
-          <h2 class="join-in__title">присоединяйтесь</h2>
-          <ul class="join-in__list">
-            <li>
-              <a class="join-in__link" href="#">
-                <svg class="join-in__icon">
-                  <use href="images/icons/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="join-in__link" href="#">
-                <svg class="join-in__icon">
-                  <use href="images/icons/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="join-in__link" href="#">
-                <svg class="join-in__icon">
-                  <use href="images/icons/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="join-in__link" href="#">
-                <svg class="join-in__icon">
-                  <use href="images/icons/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
         <!-- Submit -->
         <div class="submit">
           <h2 class="submit__title">Подпишитесь на рассылку</h2>

@@ -4,7 +4,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include media-max(768px) {
+        @include media-max(1200px) {
             flex-direction: column;
         }
     }

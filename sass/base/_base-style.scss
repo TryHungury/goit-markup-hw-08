@@ -5,6 +5,10 @@
     margin: 0 auto;
     padding: 0 0.937rem;
     
+    @include media-min (768px) {
+        max-width: 48rem;
+    }
+
     @include media-min (1200px) {
         max-width: 75rem;
     }

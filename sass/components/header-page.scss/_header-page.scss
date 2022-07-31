@@ -2,16 +2,17 @@
 .header-page {
     background-color: var(--color-background-other);
     border-bottom: 1px solid var(--color-background-ground);
-
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
     @include media-min (1200px) {
         &__flex {
             display: flex;
             justify-content: space-between;
         }
-        &__nav {
-            display: flex;
-            align-items: center;
-        } 
         &__outer-margin {
             margin-top: 1.562rem;
             margin-bottom: 1.562rem;

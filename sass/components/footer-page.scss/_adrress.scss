@@ -6,10 +6,15 @@
     font-size: 0.875rem;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    max-width: 14.5rem;
+    width: 100%;
     @include media-max(768px){
         align-items: center;
         margin-bottom: 3.75rem;
     } 
+    &__item {
+        display: block;
+    }
     &__text {
         color: var(--color-other);
         font-style: normal;
@@ -31,5 +36,13 @@
     }
     &__outer-margin:not(:last-child){
         margin-bottom: 0.562rem;
+    }
+}
+.address-list {
+    @include media-min-max (768px, 1200px){ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

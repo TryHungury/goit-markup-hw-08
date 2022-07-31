@@ -5,7 +5,10 @@
     width: 12.875rem;  
     margin-top: 0.75rem;
     margin: 0 auto 3.75rem auto;
-    @include media-min(1200px) {
+    @include media-min (768px) {
+        margin: 0 0 3.75rem 0;
+    }
+    @include media-min (1200px) {
         margin: 0 0 0 4.375rem; 
     }
     &__title {
@@ -16,7 +19,7 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 1.25rem;
-        @include media-max(768px) {
+        @include media-max (1200px) {
             text-align: center;
         }
 
