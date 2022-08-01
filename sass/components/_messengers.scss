@@ -1,0 +1,24 @@
+.messengers {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__item {
+        &:not(:last-child) {
+            padding-right: 0.625rem;
+            height: 100%;
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+        }
+        &:not(:first-child) {
+            padding-left: 0.625rem;
+        }
+    }
+    &__link {
+        font-size: 1.125rem;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--color-accent);
+    }
+}

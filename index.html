@@ -29,11 +29,10 @@
           <a class="logo logo__header-page link" href="./index.html">
             <span class="logo__first-half-header">Web</span><span class="logo__secondary-half-header">Studio</span>
           </a>
-          <button class="button-header" type="button">
+          <button class="button-header" type="button" data-mobile-menu-open>
             <!-- <a class="button-header__link link" href="#"> -->
               <svg class="button-header__thumb-icon">
-                <use class="button-header__icon icon__burger" href="./images/icons/sprite.svg#icon-menu_burger"></use>
-                <use class="button-header__icon icon__close-menu" href="./images/icons/sprite.svg#icon-close_menu"></use>
+                <use class="button-header__icon" href="./images/icons/sprite.svg#icon-menu_burger"></use>
               </svg>
             <!-- </a> -->
           </button>
@@ -667,6 +666,62 @@
               <button class="allow-group__button-submit" type="submit">Отправить</button>
             </div>
           </form>
+        </div>
+      </div>
+      <div class="backdrop-mobile" data-mobile-menu>
+        <div class="backdrop-mobile__container">
+          <div class="mobile-menu">
+            <button class="mobile-menu__button" type="button" data-mobile-menu-close>
+              <svg class="mobile-menu__icon-thumb">
+                <use class="mobile-menu__icon" href="./images/icons/sprite.svg#icon-close_menu"></use>
+              </svg>
+            </button>
+            <div class="mobile-menu__thumb">
+              <div class="navigation-mobile">
+                <ul class="navigation-mobile__list">
+                  <li class="navigation-mobile__item">
+                    <a class="link navigation-mobile__link" href="./index.html">Студия</a>
+                  </li>
+                  <li class="navigation-mobile__item">
+                    <a class="link navigation-mobile__link" href="./portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="navigation-mobile__item">
+                    <a class="link navigation-mobile__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contact-mobile">
+                <ul class="contact-mobile__list">
+                  <li class="contact-mobile__item">
+                    <a class="link contact-mobile__link contact-mobile__tel-link" href="tel:+380961111111">
+                      +38 096 111 11 11
+                    </a>
+                  </li>
+                  <li class="contact-mobile__item">
+                    <a class="link contact-mobile__link contact-mobile__mail-link" href="mailto:info@devstudio.com">
+                      info@devstudio.com
+                    </a>
+                  </li>
+                </ul>
+                <div class="messengers">
+                  <ul class="messengers__list">
+                    <li class="messengers__item">
+                      <a class="messengers__link link" href="#">Instagram</a>
+                    </li>
+                    <li class="messengers__item">
+                      <a class="messengers__link link" href="#">Twitter</a>
+                    </li>
+                    <li class="messengers__item">
+                      <a class="messengers__link link" href="#">Facebook</a>
+                    </li>
+                    <li class="messengers__item">
+                      <a class="messengers__link link" href="#">LinkedIn</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     <script src="./js/modal.js"></script>

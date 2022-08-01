@@ -1,0 +1,41 @@
+/* Навігація для тел*/
+.navigation-mobile {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+    &__item:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+    &__link {  
+        // font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 1.175;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--color-accent);
+        position: relative;
+        padding: 0.5rem 0; 
+        color: var(--color-primary);
+        transition: color var(--default-transition);
+            // & .current::after {
+            //     content: "";
+            //     position: absolute;
+            //     display: block;
+            //     width: 100%;
+            //     height: 0.25rem;
+            //     bottom: -1.562rem;
+            //     left: 0rem;
+            //     border-radius: 0.125rem;
+            //     background-color: var(--color-background-accent);
+            // }
+        /* Навігація ховер, фокус */
+            &:hover,
+            &:focus {
+                color: var(--color-accent);
+            }
+    }
+}
