@@ -28,6 +28,7 @@
         height: 7.5rem;
         background-color: var(--color-background-third);
         margin-bottom: 1.875rem;
+        border-radius: 4px;
     }
     &__icon {
         width: 4.375rem;
@@ -42,6 +43,9 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 0.625rem;
+        @include media-max (768px) {
+            text-align: center;
+        }
     }
     &__text {
         color: var(--color-secondary);
