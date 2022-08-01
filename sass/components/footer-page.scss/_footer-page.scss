@@ -23,5 +23,9 @@
             // flex-grow: 1;
             width: 100%;
         }
+        @include media-min (1200px) {
+            align-items: flex-start;
+
+        }
     }
 }

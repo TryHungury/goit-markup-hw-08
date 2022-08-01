@@ -2,7 +2,7 @@
 .section-regular-customers {
     &__list {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-wrap: wrap;
         @include media-min (1200px) {
             flex-wrap: nowrap;
