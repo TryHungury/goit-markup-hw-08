@@ -33,7 +33,7 @@
             max-width: 226px;
         }
         @include media-min (1200px){
-            margin: 0 0.937rem;
+            margin: 0 0 0.937rem 0;
             max-width: 170px;
         }
     }
