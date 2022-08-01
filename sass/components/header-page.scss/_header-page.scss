@@ -12,9 +12,12 @@
         }
     }
     &__outer-margin {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        @include media-min (768px) {
+        @include media-max (1200px) {
+            padding: 0.5rem 0 0.5rem 0;
+        }
+        // margin-top: 1rem;
+        // margin-bottom: 1rem;
+        @include media-min (1200px) {
             margin-top: 1.562rem;
             margin-bottom: 1.562rem;
         }
