@@ -15,15 +15,13 @@
 
   (() => {
     const refs = {
-      openModalBtn: document.querySelector("[data-mobile-menu-open]"),
-      closeModalBtn: document.querySelector("[data-mobile-menu-close]"),
-      menu: document.querySelector("[data-mobile-menu]"),
+      openMobileMenuBtn: document.querySelector("[data-mobile-menu-open]"),
+      closeMobileMenuBtn: document.querySelector("[data-mobile-menu-close]"),
+      mobileMenu: document.querySelector("[data-mobile-menu]"),
     };
-  
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
-      refs.menu.classList.toggle("is-hidden");
+    refs.openMobileMenuBtn.addEventListener("click", toggleMobileMenu);
+    refs.closeMobileMenuBtn.addEventListener("click", toggleMobileMenu);
+    function toggleMobileMenu() {
+      refs.mobileMenu.classList.toggle("is-hidden");
     }
   })();
