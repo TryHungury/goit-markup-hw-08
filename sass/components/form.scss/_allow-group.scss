@@ -4,12 +4,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 1rem;
+    // max-width: 23.125rem;
+    // width: 100%;
+    padding: 0 2.5rem;
+    margin: auto;
     margin-bottom: 1.875rem;
     &__input {
         appearance: none;
+        // padding-right: 1rem;
         &::before {
+            display: flex;
             position: absolute;
+            // margin-right: 1rem;
+            // padding-right: 1rem;
             top: 0;
             left: 0;
             content:'';
@@ -22,7 +29,8 @@
             transition: opacity var(--default-transition);
             z-index: 1;
         }
-        &:checked.allow-group::before {
+
+        &:checked.allow-group__input::before {
             opacity: 0;
         }
     }
@@ -46,20 +54,32 @@
         .allow-group__input:checked + & {
             fill: var(--color-accent);
         }
+
     }
     &__label {
-        justify-content: space-between;
+        display: flex;
+        justify-content: space-evenly;
         color: var(--color-secondary);
         font-style: normal;
         font-weight: 400;
-        font-size: 0.875rem;
+        font-size: 0.7rem;
         line-height: 1.17;
         letter-spacing: 0.01em;
-        width: 82%;
+        width: 100%;
+
+        @include media-min (1200px) {
+            font-size: 0.875rem;
+            max-width: 26.562rem;
+        }
     }
+    &__span {
+        margin-left: 0.5rem;
+    }
+
     &__link {
         color: var(--color-accent);
         text-decoration-line: underline;
+        margin-left: 0.3rem;
     }
     /* Кнопка форми */
     &__thumb-button {

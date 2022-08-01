@@ -24,7 +24,7 @@
             }
         }
         &:nth-child(-n + 3) {
-            @include media-min (768px){
+            @include media-max (1200px){
                 margin: 0 0 1.875rem 0;
             }
         }
