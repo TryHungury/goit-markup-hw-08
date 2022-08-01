@@ -34,6 +34,7 @@
         }
         @include media-min (1200px){
             margin: 0 0 0.937rem 0;
+            margin: 0 0 0 0;
             max-width: 170px;
         }
     }
