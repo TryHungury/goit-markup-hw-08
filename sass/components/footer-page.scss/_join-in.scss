@@ -2,10 +2,14 @@
 .join-in {
     display: flex;
     flex-direction: column;
-    width: 12.875rem;  
+    width: 12.875rem; 
     margin: 0 auto 3.75rem auto;
+    
     @include media-min (768px) {
         margin: 0 0 3.75rem 0;
+    }
+    @include media-min-max (768px, 1200px){ 
+        padding: 0.75rem 0 0 0 ; 
     }
     @include media-min (1200px) {
         margin: 0.75rem 0 0 4.375rem; 
