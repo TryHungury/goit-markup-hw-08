@@ -5,7 +5,7 @@
     &__thumb {
         @include media-min (768px) {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
         }
         @include media-min-max (768px ,1200px) {
             margin-bottom: 3.75rem;

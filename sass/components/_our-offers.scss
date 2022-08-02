@@ -34,7 +34,7 @@
         }
     }
     
-    @include media-min (768px) {
+    @include media-min-max (768px, 1200px) {
         &__outer-margin:not(:last-child) {
             margin-bottom: 1.875rem;
         }

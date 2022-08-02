@@ -2,7 +2,7 @@
 .radio-button { 
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 3.125rem;
+    margin-bottom: 2rem;
     @include media-min (768px){
         justify-content: center;
     }
